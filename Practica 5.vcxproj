@@ -127,23 +127,27 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Login.cpp" />
     <ClCompile Include="mainForm.cpp" />
-    <ClCompile Include="Matriculacion.cpp" />
+    <ClCompile Include="Register.cpp" />
+    <ClCompile Include="UserManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="mainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Matriculacion.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
+    <ClInclude Include="Register.h" />
+    <ClInclude Include="UserManager.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Matriculacion.resx">
-      <DependentUpon>Matriculacion.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
